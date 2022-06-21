@@ -1,14 +1,19 @@
+
 Proceso Factorial_de_un_Numero
 	Definir fact,n Como Real
 	Definir I Como Entero
-	Escribir 'Escriba un Numero'
+	Escribir " -------------------"
+	Escribir " |Escriba el Numero|"
+	Escribir " -------------------"
 	Leer n
 	fact <- 1
 	Si n>=0 Entonces
 		Para I<-1 Hasta n Hacer
-			fact <- fact*I
+			fact <- I*fact
 		FinPara
-		Escribir 'El factorial del numero es: ',fact
+		Escribir " ------------------------------------"
+		Escribir ' |El factorial del numero es: ',fact," |"
+		Escribir " ------------------------------------"
 	SiNo
 		Escribir 'El factorial no existe'
 	FinSi
